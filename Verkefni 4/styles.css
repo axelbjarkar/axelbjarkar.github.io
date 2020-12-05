@@ -1,0 +1,179 @@
+*, *:before, *:after {
+  box-sizing: border-box; 
+}
+
+/* ====== GRID Area ====== */
+nav{ grid-area: listi;}
+header{ grid-area: haus;}
+main{ grid-area: megin;}
+footer{ grid-area: fotur;}
+
+/* ====== GRID Template Areas ===== */
+.wrapper{
+  display: grid;
+  grid-template-areas: 
+  
+  "haus"
+  "megin"
+  "fotur"
+  "listi"
+  ;
+}
+
+/* ====== Base CSS ====== */
+
+body {
+line-height: 1.5em;
+background-color: rgb(14, 32, 116);
+}
+.topmenu {
+background: #00ff00; 
+}
+.header {
+background: tomato; 
+}
+.footer {
+background: lightgreen; 
+}
+.midja {
+background: skyblue; 
+}
+.vinstri {
+background: gold; 
+}
+.haegri {
+background: pink; 
+}
+
+.header,
+.footer,
+.midja,
+.vinstri, 
+.haegri {
+padding: 1em; 
+}
+
+.header h1 {
+color: #fff;
+line-height: 1.2;
+font-weight: normal;
+}
+.midja h2 {
+margin: .7em 0 .8em 0;
+}
+.midja h4 {
+text-align: justify;
+margin: .4em 0;
+}
+.midja p {
+text-align: justify;
+}
+
+/* ========================================
+Efnisyfirlit (mobile)
+======================================== */
+.topnav ul{
+background: #1c2d1c; 
+}
+.topmenu {
+display: block;
+padding: 0;
+margin: 0;
+list-style: none; 
+}
+.topmenu li {
+border: 0;
+border-bottom: 1px solid lime; 
+padding: 0;
+margin:0;
+}
+.topmenu a {
+display: block;     /* ath! */
+color: white;
+text-decoration: none;
+text-align: center;
+padding: .4em 1em; 
+}
+.topmenu a:hover,
+.topmenu a:active,
+.virkur {
+color: black !important;
+background-color: rgb(115, 191, 253);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  
+  .main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    
+    "vinstri midja"
+    "haegri midja"; 
+
+  }
+  .midja {
+    grid-area: midja;
+  }
+  .vinstri {
+    grid-area: vinstri;
+  }
+  .haegri {
+    grid-area: haegri;
+  }
+
+}
+
+@media only screen and (min-width: 760px) {
+  .wrapper{
+    grid-template-areas: 
+    
+    "listi"
+    "haus"
+    "megin"
+    "fotur";
+  }
+
+  .button{
+    border: 1px solid lime;
+  }
+
+  .topmenu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    
+    "a a a a";
+  }
+
+  .myndabox{
+    display: grid;
+    grid-template-areas: 
+    
+    "img img"
+    "img img";
+  }
+}
+
+@media only screen and (min-width: 960px) {
+
+  .main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    
+    "vinstri midja haegri";
+  }
+  
+  .myndabox{
+    display: grid;
+    grid-template-areas: 
+    
+    "img img img img";
+  }
+}
