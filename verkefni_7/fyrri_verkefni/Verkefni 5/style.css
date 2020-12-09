@@ -1,0 +1,106 @@
+/* GRID AREA */
+header{ grid-area: haus;}
+section{ grid-area: dalkur;}
+footer{ grid-area: fotur;}
+main{ grid-area: megin;}
+/* GRID Templete AREAS */
+header {
+  background-image: linear-gradient(to bottom, rgb(215, 225, 255), rgb(189, 205, 255));
+  text-align: center;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  
+  "verkefni"
+  "h1 nav"
+  ;
+}
+
+
+body {
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+
+  "haus"
+  "dalkur"
+  "megin"
+  "fotur"
+  ;
+}
+
+main{
+  background-image: linear-gradient(to bottom, rgb(215, 225, 255), rgb(189, 205, 255));
+}
+footer{
+  display: grid;
+  grid-template: 1fr 1fr 1fr;
+  grid-template-areas: 
+  
+  "DL RL AL"
+  ;
+}
+
+blockquote{
+  background-color: rgb(255, 255, 255, 0.7);
+}
+
+.intro{
+  background-image: linear-gradient(to bottom, rgb(215, 225, 255), rgb(189, 205, 255));
+  padding-bottom: 5px;
+}
+
+.FOOT{
+  background-image: linear-gradient(to bottom, rgb(215, 225, 255), rgb(189, 205, 255));
+}
+
+p,
+h3,
+h4,
+a,
+li,
+dl,
+blockquote,
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+  text-decoration: none;
+  padding: 1px;
+}
+.takki {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  font-size: 50px;
+  border: 1px solid black;
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(72, 182, 255));
+  color: black
+}
+/* ======================================== 
+Viðmið - breakpoints 37.5em = 600px + 
+========================================*/
+@media screen and (min-width: 37.5em) {
+  /* kóði sem yfirritar fyrri skipanir og nýjar skipanir sem eiga við 37.5em skjástærð */
+  body{
+    max-width: 37.5em;
+  }
+}
+/* ========================================
+Viðmið - breakpoints 48em = 768px +
+======================================== */
+@media screen and (min-width: 48em) {
+  /* kóði sem yfirritar fyrri skipanir og nýjar skipanir sem eiga við 48em skjástærð */
+  body{
+    max-width: 48em;
+  }
+}
+/* ========================================
+Viðmið - breakpoints 60em = 960px +
+======================================== */
+@media screen and (min-width: 60em) {
+  /* kóði sem yfirritar fyrri skipanir og nýjar skipanir sem eiga við 60em skjástærð */
+  body{
+    max-width: 60em;
+  }
+}

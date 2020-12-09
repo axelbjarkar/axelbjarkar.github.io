@@ -1,0 +1,69 @@
+h1 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 100px;
+    color: #ffffff;
+    text-shadow: -4px 2px rgb(79, 8, 121);
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+h2 {
+    font-family: 'Francois One', sans-serif;
+    color: #ffffff;
+    text-shadow: -2px 1px rgb(79, 8, 121);
+
+}
+
+.link {
+    color: #ffffff;
+    font-family: 'Francois One', sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+    text-shadow: -1px 2px rgb(79, 8, 121);
+}
+
+.link:hover {
+    color:rgb(79, 8, 121);
+    text-shadow: 0px 0px #dff518;
+}
+
+.container {
+    background-image: linear-gradient(to bottom, rgb(153, 14, 245), rgb(31, 17, 231));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dalkar {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px;
+}
+
+
+.textbox {
+    height: auto;
+    width: auto;
+    border-radius: 15%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.haus {
+    position: fixed;
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgb(153, 14, 245), rgb(31, 17, 231));
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+
+    
+    ;
+}

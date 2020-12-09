@@ -1,0 +1,18 @@
+.title {
+    font-size: 70px;
+    color: rgb(105, 99, 13);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.blue {
+    color: blue;
+    text-decoration: underline;
+}
+
+li {
+    color: blue;
+    list-style: none;
+    text-decoration: underline;
+    display: inline;
+    padding: 50px;
+}

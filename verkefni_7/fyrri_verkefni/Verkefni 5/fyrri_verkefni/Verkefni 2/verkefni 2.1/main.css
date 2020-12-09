@@ -1,0 +1,19 @@
+#greenbox {
+    border: 2px solid green;
+    margin: 20px;
+}
+
+#redbox {
+    color: red;
+    border: 5px solid red;
+    margin: 20px;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+#bluebox {
+    border: 5px dashed blue;
+    padding: 25px;
+    color:  blue;
+    box-sizing: border-box;
+}

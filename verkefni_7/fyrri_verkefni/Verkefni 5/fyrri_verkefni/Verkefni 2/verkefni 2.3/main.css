@@ -1,0 +1,39 @@
+.box {
+    border: 2px solid black;
+    
+}
+
+.group {
+    display: flex;
+}
+ 
+.imgR {
+    float: right;
+    padding: 10px;
+}
+
+.right {
+    text-align: right;
+    background-color: rgb(219, 219, 219);
+}
+
+.bigL {
+    font-size: 80px;
+    float: left;
+    padding: 10px;
+    line-height: 60%;
+}
+
+p {
+    text-align: left;
+    padding: 10px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+.athugid {
+    background-color: yellow;
+    text-align: center;
+}

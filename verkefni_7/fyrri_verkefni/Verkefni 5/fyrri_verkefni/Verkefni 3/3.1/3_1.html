@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Verkefni 3.1</title>
+        <link rel="stylesheet" type="text/css" href="3_1.css">
+        <style>
+            body {
+                color: ffff;
+                text-align: center;
+            }
+            #grid {
+                display: grid;
+                max-width: 960px;
+                margin: 0 auto;
+                
+            }
+            #grid div{
+                border: 1px solid black;
+                padding: 20px;
+            }
+
+            #grid main{
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+            }
+
+            ul {
+                list-style: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="grid">
+            <header>
+                <div><p class="title">Skipulag vefsíðu með Grid</p><br><p class="blue">Grid system</p></div>
+            </header>
+            <nav>
+                <div>
+                    <ul>
+                        <li>Forsíða</li>
+                        <li>Síða 2</li>
+                        <li>Síða 3</li>
+                        <li>Siða 4</li>
+                    </ul>
+                </div>
+            </nav>
+            <main>
+                <div><strong>Litafræði</strong><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius similique porro placeat dignissimos sint veritatis ducimus omnis odio minus ea cumque excepturi, amet id explicabo. Consectetur exercitationem ea vitae beatae!<br><p class="blue">Allt um litafræði</p></div>
+                <div><strong>Leturfræði</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aspernatur magni optio voluptatem eum, perspiciatis dolores consequatur consectetur aliquam delectus?<br>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, possimus?</div><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic eaque velit sit dolorem sunt quasi ipsum, suscipit dolorum eius possimus?
+                </div>
+                <div><strong>Leturgerð</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aut, nulla dolore voluptate dignissimos sapiente nobis id nesciunt fugit, cum distinctio quo assumenda neque earum provident odit corporis necessitatibus eveniet.<br>Heimild: Ég lol</div>
+            </main>
+            <footer>
+                <div>
+                    <ul>
+                        <li>Kerfisletur - system fonts</li>
+                        <li>Litaval</li>
+                        <li>©️ 2020 ABS</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
